@@ -108,12 +108,12 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
     outline: none;
     text-align: center;
-    background-color: white;
+    background-color: #FCFCFD;
     width: 20em;
     /* overflow: auto; */
     box-sizing: border-box;
     height: 60vh;
-    border: 3px solid gray;
+    border: 3px solid #D0D5DD;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 
 
@@ -139,11 +139,13 @@ input::-webkit-inner-spin-button {
 #method_id {
     background-color: #FFE4E8;
     border-radius: 5px;
-    font-size: 1.5em;
-    margin: 2em;
-    margin-top: 1em;
-    padding: 0.3em;
+
+    font-family: "Jua";
+    font-size: 1.2em;
+    border: none;
+    padding: 0.5em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2em;
 }
 
 #method_id:hover {
