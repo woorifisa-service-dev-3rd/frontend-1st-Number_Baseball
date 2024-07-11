@@ -47,9 +47,8 @@ input::-webkit-inner-spin-button {
     outline: none;
     text-align: center;
     background-color: #b9e6fe;
-    height: 15vh;
-    width: 15em;
-    font-size: 1em;
+    width: 12em;
+    font-size: 1.5em;
     margin-top: 0.5em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
