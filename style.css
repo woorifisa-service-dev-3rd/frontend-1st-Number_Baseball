@@ -1,5 +1,3 @@
-
-
 html,
 body {
     margin: 0;
@@ -9,11 +7,23 @@ body {
     font-family: "Jua";
 }
 
-#container1 {
-    display: flex;
-    justify-content: space-between;
-    -ms-flex-align: center;
+input {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 10em;
+    width: 1em;
+    text-align: center;
+    background-color: #FFE4E8;
+    font-family: "Jua";
 }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 
 .box {
     justify-content: center;
@@ -40,6 +50,55 @@ body {
 
 }
 
+
+.note {
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+
+
+
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: 10em;
+    margin-top: 3em;
+}
+
+.btn-primary {
+    width: 100px;
+    /* bgco - back ground color */
+    background-color: #b9e6fe;
+    font-family: "Jua";
+    font-size: 50px;
+    padding: 20px;
+    margin: 10px;
+    border: 0;
+}
+
+#container1 {
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-align: center;
+}
+#block2::-webkit-scrollbar {
+    width: 1em;
+}
+
+#block2::-webkit-scrollbar-thumb {
+    background-color: #007AFF;
+    border-radius: 10em;
+}
+
+#block2::-webkit-scrollbar-track {
+    width: 0;
+}
+
 #block2 {
     border: none;
     border-radius: 10px;
@@ -54,28 +113,9 @@ body {
 
 }
 
-
 #scoreboard {
     border: 3px solid gray;
     border-radius: 15px; 
-}
-
-.note {
-    display: flex;
-    justify-content: space-around;
-    
-    align-items: center;
-}
-
-input {
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    font-size: 10em;
-    width: 1em;
-    text-align: center;
-    background-color: #FFE4E8;
-    font-family: "Jua";
 }
 
 #sub_btn {
@@ -84,52 +124,4 @@ input {
     background-color: #007AFF;
     
 
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-#block2::-webkit-scrollbar {
-    width: 1em;
-}
-
-#block2::-webkit-scrollbar-thumb {
-    background-color: #007AFF;
-    border-radius: 10em;
-}
-
-#block2::-webkit-scrollbar-track {
-    width: 0;
-}
-
-.title {
-    display: flex;
-    justify-content: center;
-    height: 10em;
-    margin-top: 3em;
-}
-
-#number_button1 {
-
-   
-}
-.number_button {
-
-
-
-   
-}
-
-
-.btn-primary {
-    width: 100px;
-    /* bgco - back ground color */
-    background-color: #b9e6fe;
-    font-family: "Jua";
-    font-size: 50px;
-    padding: 20px;
-    margin: 10px;
-    border: 0;
 }
