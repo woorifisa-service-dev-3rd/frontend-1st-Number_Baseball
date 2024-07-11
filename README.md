@@ -27,7 +27,7 @@
 
 <br>
 
-### Light house 개선과정
+### Light house 측정결과
 
 ![lighthouse](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/%EB%9D%BC%EC%9D%B4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4.png)
 
