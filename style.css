@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jua";
 }
 html,
 body {
     margin: 0;
     height: 100%;
-    font-family: "Jua";
 }
 
 input {
@@ -18,7 +18,6 @@ input {
     width: 1em;
     text-align: center;
     background-color: #FFE4E8;
-    font-family: "Jua";
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,7 +40,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.block {
+.log {
     border: none;
     border-radius: 10px;
     outline: none;
@@ -54,7 +53,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.note {
+.main_container {
     display: flex;
     justify-content: space-around;
 
@@ -74,7 +73,6 @@ input::-webkit-inner-spin-button {
     width: 100px;
     /* bgco - back ground color */
     background-color: #b9e6fe;
-    font-family: "Jua";
     font-size: 50px;
     padding: 20px;
     margin: 10px;
@@ -91,20 +89,20 @@ input::-webkit-inner-spin-button {
     margin-bottom: 3em;
 }
 
-#block2::-webkit-scrollbar {
+#logList::-webkit-scrollbar {
     width: 1em;
 }
 
-#block2::-webkit-scrollbar-thumb {
+#logList::-webkit-scrollbar-thumb {
     background-color: #007AFF;
     border-radius: 10em;
 }
 
-#block2::-webkit-scrollbar-track {
+#logList::-webkit-scrollbar-track {
     width: 0;
 }
 
-#block2 {
+#logList {
     border: none;
     border-radius: 15px;
     outline: none;
@@ -138,7 +136,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
 }
 
-.block_container {
+.log_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,10 +144,9 @@ input::-webkit-inner-spin-button {
 #method_id{
     background-color: #FFE4E8;
     border-radius: 5px;
-    font-family: "Jua";
-    font-size:  1.2em;
-    border: none;
-    padding: 0.5em;
+    font-size:  1.5em;
+    margin: 2em;
+    margin-top: 1em;
+    padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 2em;
 }
