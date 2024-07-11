@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jua";
 }
 html,
 body {
     margin: 0;
     height: 100%;
-    font-family: "Jua";
 }
 
 input {
@@ -18,7 +18,6 @@ input {
     width: 1em;
     text-align: center;
     background-color: #FFE4E8;
-    font-family: "Jua";
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -74,7 +73,6 @@ input::-webkit-inner-spin-button {
     width: 100px;
     /* bgco - back ground color */
     background-color: #b9e6fe;
-    font-family: "Jua";
     font-size: 50px;
     padding: 20px;
     margin: 10px;
@@ -146,8 +144,8 @@ input::-webkit-inner-spin-button {
 #method_id{
     background-color: #FFE4E8;
     border-radius: 5px;
-    font-family: "Jua";
     font-size:  1.5em;
     margin: 2em;
     margin-top: 1em;
+    padding: 0.3em;
 }
