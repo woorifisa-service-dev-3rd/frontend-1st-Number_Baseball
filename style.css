@@ -1,9 +1,7 @@
 html,
 body {
     margin: 0;
-    /* 기본 여백을 제거합니다. */
     height: 100%;
-    /* HTML과 BODY 요소의 높이를 100%로 설정합니다. */
     font-family: "Jua";
 }
 
@@ -44,10 +42,10 @@ input::-webkit-inner-spin-button {
     text-align: center;
     background-color: #b9e6fe;
     height: 15vh;
-    width: 20em;
+    width: 15em;
     font-size: 1em;
     margin-top: 0.5em;
-
+    
 }
 
 
@@ -57,9 +55,6 @@ input::-webkit-inner-spin-button {
     
     align-items: center;
 }
-
-
-
 
 
 
@@ -79,6 +74,7 @@ input::-webkit-inner-spin-button {
     padding: 20px;
     margin: 10px;
     border: 0;
+    border-radius:  10px;
 }
 
 #container1 {
@@ -101,22 +97,18 @@ input::-webkit-inner-spin-button {
 
 #block2 {
     border: none;
-    border-radius: 10px;
+    border-radius:15px;
     outline: none;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: white;
     width: 20em;
-    overflow: auto;
+    /* overflow: auto; */
     box-sizing: border-box;
     height: 60vh;
-
-
-}
-
-#scoreboard {
     border: 3px solid gray;
-    border-radius: 15px; 
+    
 }
+
 
 #sub_btn {
     box-shadow: 0px 0.8px 1.5px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -124,4 +116,19 @@ input::-webkit-inner-spin-button {
     background-color: #007AFF;
     
 
+}
+
+#number_button1{
+    display: flex;
+    justify-content: center;
+}
+
+#number_button2{
+    display: flex;
+    justify-content: center;
+}
+.block_container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
