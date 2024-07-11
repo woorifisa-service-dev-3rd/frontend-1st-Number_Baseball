@@ -19,6 +19,7 @@ input {
     text-align: center;
     background-color: #FFE4E8;
     font-family: "Jua";
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -50,14 +51,14 @@ input::-webkit-inner-spin-button {
     width: 15em;
     font-size: 1em;
     margin-top: 0.5em;
-    
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 
 .note {
     display: flex;
     justify-content: space-around;
-    
+
     align-items: center;
 }
 
@@ -66,7 +67,7 @@ input::-webkit-inner-spin-button {
 .title {
     display: flex;
     justify-content: center;
-    height: 10em;
+    height: 5em;
     margin-top: 3em;
 }
 
@@ -80,13 +81,17 @@ input::-webkit-inner-spin-button {
     margin: 10px;
     border: 0;
     border-radius:  1em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
 }
 
 #container1 {
     display: flex;
     justify-content: space-between;
     -ms-flex-align: center;
+    margin-bottom: 3em;
 }
+
 #block2::-webkit-scrollbar {
     width: 1em;
 }
@@ -102,7 +107,7 @@ input::-webkit-inner-spin-button {
 
 #block2 {
     border: none;
-    border-radius:15px;
+    border-radius: 15px;
     outline: none;
     text-align: center;
     background-color: white;
@@ -111,7 +116,9 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
     height: 60vh;
     border: 3px solid gray;
-    
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+
 }
 
 
@@ -119,20 +126,22 @@ input::-webkit-inner-spin-button {
     box-shadow: 0px 0.8px 1.5px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
     background-color: #007AFF;
+
 }
 
-#number_button1{
+#number_button1 {
     display: flex;
     justify-content: center;
 }
 
-#number_button2{
+#number_button2 {
     display: flex;
     justify-content: center;
 }
+
 .block_container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 #method_id{
