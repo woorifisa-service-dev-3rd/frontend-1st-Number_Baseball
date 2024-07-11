@@ -1,6 +1,9 @@
-html, body {
-    margin: 0; /* 기본 여백을 제거합니다. */
-    height: 100%; /* HTML과 BODY 요소의 높이를 100%로 설정합니다. */
+html,
+body {
+    margin: 0;
+    /* 기본 여백을 제거합니다. */
+    height: 100%;
+    /* HTML과 BODY 요소의 높이를 100%로 설정합니다. */
 }
 
 #container1 {
@@ -15,7 +18,7 @@ html, body {
     justify-content: center;
     margin-right: 3em;
     margin-left: 3em;
-  
+
 }
 
 .answer {
@@ -24,10 +27,10 @@ html, body {
 }
 
 .block {
-    border:none;
+    border: none;
     border-radius: 10px;
     outline: none;
-    text-align :center;
+    text-align: center;
     background-color: #007AFF;
     height: 15vh;
     width: 20em;
@@ -37,23 +40,24 @@ html, body {
 }
 
 #block2 {
-    border:none;
+    border: none;
     border-radius: 10px;
     outline: none;
-    text-align :center;
+    text-align: center;
     background-color: #b9c622;
     width: 20em;
     overflow: auto;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     height: 60vh;
-   
-    
+
+
 }
 
 
-#scoreboard{
+#scoreboard {
     border: 5px solid red;
 }
+
 .note {
     display: flex;
     justify-content: space-around;
@@ -61,17 +65,17 @@ html, body {
     align-items: center;
 }
 
-input{
-    border:none;
+input {
+    border: none;
     border-radius: 10px;
     outline: none;
     font-size: 10em;
     width: 1em;
-    text-align :center;
-    background-color:#a71f1f;
+    text-align: center;
+    background-color: #a71f1f;
 }
 
-#sub_btn{
+#sub_btn {
     box-shadow: 0px 0.8px 1.5px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
     background-color: #007AFF;
@@ -80,22 +84,41 @@ input{
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
-#block2::-webkit-scrollbar{
+#block2::-webkit-scrollbar {
     width: 1em;
 }
-#block2::-webkit-scrollbar-thumb{
+
+#block2::-webkit-scrollbar-thumb {
     background-color: #007AFF;
     border-radius: 10em;
 }
-#block2::-webkit-scrollbar-track{
+
+#block2::-webkit-scrollbar-track {
     width: 0;
 }
+
 .title {
     display: flex;
     justify-content: center;
     height: 10em;
     margin-top: 3em;
+}
+
+.number_button {
+    display: flex;
+    flex-direction: center;
+}
+
+
+.btn-primary {
+    width: 100px;
+    /* bgco - back ground color */
+    background-color: blue;
+    font-size: 50px;
+    border: solid 3px blue;
+    padding: 20px;
+    margin: 10px;
 }
