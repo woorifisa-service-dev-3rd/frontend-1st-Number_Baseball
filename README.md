@@ -1,7 +1,7 @@
 ## Number_Baseball 🎮
 간단하게 해볼 수 있는 숫자 야구 게임을 즐길 수 있는 웹사이트 입니다.
 
--gif 추가예정
+![pages](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
 
 
 <br>
@@ -35,6 +35,8 @@
 
 <br>
 
+### 팀 규칙
+
 
 ### UI 스타일 가이드
 - 폰트 : Jua
@@ -46,6 +48,4 @@
 
 - 색상 : #FFE4E8, #B9E6FE, #007AFF, #FCFCFD, #D0D5DD
 
-    참고 Figma:
-    https://www.figma.com/design/ogohYkEHJ8U2jLHyaZjsjV/%E2%9D%96-Ultimate-starter-style-guide-UI-kit-%E2%80%93-Untitled-UI-(Community)?node-id=102-15836&m=dev
-
+ 
