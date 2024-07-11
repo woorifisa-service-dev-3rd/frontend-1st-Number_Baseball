@@ -1,4 +1,4 @@
-### Number_Baseball 
+## Number_Baseball 🎮
 간단하게 해볼 수 있는 숫자 야구 게임을 즐길 수 있는 웹사이트 입니다.
 
 -gif 추가예정
@@ -9,7 +9,7 @@
 ### 서비스 소개
 
 9번의 기회를 최소한으로 사용하여 숫자를 맞춰보세요!
-생각만큼 쉽진 않을걸요~?
+생각만큼 쉽진 않을걸요~? (☞ﾟヮﾟ)☞
 
 <br>
 
@@ -39,7 +39,8 @@
 ### UI 스타일 가이드
 - 폰트 : Jua
 
-    https://fonts.google.com/specimen/Jua?subset=korean
+![font](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/font.jpg)
+
 
 
 
