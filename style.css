@@ -1,17 +1,18 @@
+
+
 html,
 body {
     margin: 0;
     /* 기본 여백을 제거합니다. */
     height: 100%;
     /* HTML과 BODY 요소의 높이를 100%로 설정합니다. */
+    font-family: "Jua";
 }
 
 #container1 {
     display: flex;
     justify-content: space-between;
     -ms-flex-align: center;
-    border: 5px solid black;
-
 }
 
 .box {
@@ -31,7 +32,7 @@ body {
     border-radius: 10px;
     outline: none;
     text-align: center;
-    background-color: #007AFF;
+    background-color: #b9e6fe;
     height: 15vh;
     width: 20em;
     font-size: 1em;
@@ -44,7 +45,7 @@ body {
     border-radius: 10px;
     outline: none;
     text-align: center;
-    background-color: #b9c622;
+    background-color: #FFFFFF;
     width: 20em;
     overflow: auto;
     box-sizing: border-box;
@@ -55,13 +56,14 @@ body {
 
 
 #scoreboard {
-    border: 5px solid red;
+    border: 3px solid gray;
+    border-radius: 15px; 
 }
 
 .note {
     display: flex;
     justify-content: space-around;
-    border: 5px solid red;
+    
     align-items: center;
 }
 
@@ -72,13 +74,15 @@ input {
     font-size: 10em;
     width: 1em;
     text-align: center;
-    background-color: #a71f1f;
+    background-color: #FFE4E8;
+    font-family: "Jua";
 }
 
 #sub_btn {
     box-shadow: 0px 0.8px 1.5px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
     background-color: #007AFF;
+    
 
 }
 
@@ -107,18 +111,25 @@ input::-webkit-inner-spin-button {
     margin-top: 3em;
 }
 
+#number_button1 {
+
+   
+}
 .number_button {
-    display: flex;
-    flex-direction: center;
+
+
+
+   
 }
 
 
 .btn-primary {
     width: 100px;
     /* bgco - back ground color */
-    background-color: blue;
+    background-color: #b9e6fe;
+    font-family: "Jua";
     font-size: 50px;
-    border: solid 3px blue;
     padding: 20px;
     margin: 10px;
+    border: 0;
 }
