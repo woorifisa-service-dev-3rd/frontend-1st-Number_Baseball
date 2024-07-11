@@ -1,7 +1,7 @@
 ## Number_Baseball 🎮
 간단하게 해볼 수 있는 숫자 야구 게임을 즐길 수 있는 웹사이트 입니다.
 
-![pages](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
+![페이지 시연](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
 
 
 <br>
@@ -29,6 +29,7 @@
 
 ### Light house 개선과정
 
+![lighthouse](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/%EB%9D%BC%EC%9D%B4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4.png)
 
 
 
@@ -37,6 +38,12 @@
 
 ### 팀 규칙
 
+- 지정 폰트 사용하기 - UI 스타일 가이드 참조
+- 지정 색상 사용하기 - UI 스타일 가이드 참조
+
+
+
+<br>
 
 ### UI 스타일 가이드
 - 폰트 : Jua
