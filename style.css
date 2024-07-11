@@ -40,7 +40,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.block {
+.log {
     border: none;
     border-radius: 10px;
     outline: none;
@@ -53,7 +53,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.note {
+.main_container {
     display: flex;
     justify-content: space-around;
 
@@ -89,20 +89,20 @@ input::-webkit-inner-spin-button {
     margin-bottom: 3em;
 }
 
-#block2::-webkit-scrollbar {
+#logList::-webkit-scrollbar {
     width: 1em;
 }
 
-#block2::-webkit-scrollbar-thumb {
+#logList::-webkit-scrollbar-thumb {
     background-color: #007AFF;
     border-radius: 10em;
 }
 
-#block2::-webkit-scrollbar-track {
+#logList::-webkit-scrollbar-track {
     width: 0;
 }
 
-#block2 {
+#logList {
     border: none;
     border-radius: 15px;
     outline: none;
@@ -136,7 +136,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
 }
 
-.block_container {
+.log_container {
     display: flex;
     flex-direction: column;
     align-items: center;
