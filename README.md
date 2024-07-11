@@ -53,7 +53,7 @@
 
 
 
-- 색상 : #FFE4E8, #B9E6FE, #007AFF, #FCFCFD, #D0D5DD
+- 색상 : #FFE4E8, #B9E6FE, #FCFCFD, #D0D5DD
 
   
 ![color](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/dev/img_/%EC%83%89%EC%83%81.png)
