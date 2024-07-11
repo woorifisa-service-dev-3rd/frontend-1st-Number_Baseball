@@ -7,26 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="note">
         <div>
             <div class="title">
-                <a href="#">
-                    <img src="https://thumb.ac-illust.com/87/8730a6d4dc053b4d2cf01f6ce671b6a1_t.jpeg" alt="" width="50"
-                        height="50">
-                </a>
-                <strong style="font-size: 50px;"> Number_baseball </strong>
-                <a href="#">
-                    <img src="https://png.pngtree.com/png-clipart/20190604/original/pngtree-baseball-png-image_1411381.jpg"
-                        alt="" width="50" height="50">
-                </a>
-            </div>
+                <img src="img_/numberbaseball.jpg" alt="">
 
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="button" style="margin-left: 1em; " id="method_id">게임 방법</button>
+            </div>
             <div class="container" id="container1">
                 <div class="box">
                     <div class="answer">
@@ -42,20 +36,20 @@
                 </div>
                 <div class="box">
                     <div class="answer">
-                        <strong> 세번째 숫자</strong>
+                        <strong> 세 번째 숫자</strong>
                     </div>
                     <input type="number" id="number1">
                 </div>
                 <div class="box">
                     <div class="answer">
-                        <strong> 네번째 숫자</strong>
+                        <strong> 네 번째 숫자</strong>
                     </div>
                     <input type="number" id="number1">
                 </div>
             </div>
-            <div class="number_button">
+            <div class="button_container">
                 <div id="number_button1">
-    
+
                     <button type="button" class="btn btn-primary">
                         <strong>1</strong>
                     </button>
@@ -74,7 +68,7 @@
                 </div>
                 <div id="number_button2">
                     <button type="button" class="btn btn-primary">
-                            <strong>6</strong>
+                        <strong>6</strong>
                     </button>
                     <button type="button" class="btn btn-primary">
                         <strong>7</strong>
@@ -90,43 +84,42 @@
                     </button>
                 </div>
             </div>
+            
+            
         </div>
 
-       
 
-        <article class="container" id="scoreboard">
-            <!-- 점수판 -->
-
-            <!-- 로그판 -->
+        <article id="scoreboard">
             <div>
                 <div id="block2">
-                    <strong>Log</strong>
-
-                    <div class="block">
-                        <div>
-                            <strong>1</strong>
-                            <strong>2</strong>
-                            <strong>3</strong>
-                            <strong>3</strong>
+                    <strong style="font-size: 50px;">Log</strong>
+                    <div class="block_container">
+                        <div class="block">
+                            <div>
+                                <strong>1</strong>
+                                <strong>2</strong>
+                                <strong>3</strong>
+                                <strong>3</strong>
+                            </div>
+                            <div>
+                                <strong>2 strike</strong>
+                                <strong>2 boll</strong>
+                                <strong>3 out</strong>
+                                <strong>3</strong>
+                            </div>
                         </div>
-                        <div>
-                            <strong>2 strike</strong>
-                            <strong>2 boll</strong>
-                            <strong>3 out</strong>
-                            <strong>3</strong>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div>
-                            <strong>1</strong>
-                            <strong>2</strong>
-                            <strong>3</strong>
-                            <strong>3</strong>
-                        </div>
-                        <div>
-                            <strong>2 strike</strong>
-                            <strong>2 boll</strong>
-                            <strong>3 out</strong>
+                        <div class="block">
+                            <div>
+                                <strong>1</strong>
+                                <strong>2</strong>
+                                <strong>3</strong>
+                                <strong>3</strong>
+                            </div>
+                            <div>
+                                <strong>2 strike</strong>
+                                <strong>2 boll</strong>
+                                <strong>3 out</strong>
+                            </div>
                         </div>
                     </div>
 
