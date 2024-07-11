@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,
 body {
     margin: 0;
@@ -75,8 +80,9 @@ input::-webkit-inner-spin-button {
     padding: 20px;
     margin: 10px;
     border: 0;
-    border-radius: 1em;
+    border-radius:  1em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
 }
 
 #container1 {
@@ -112,6 +118,7 @@ input::-webkit-inner-spin-button {
     border: 3px solid gray;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 
+
 }
 
 
@@ -119,7 +126,6 @@ input::-webkit-inner-spin-button {
     box-shadow: 0px 0.8px 1.5px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
     background-color: #007AFF;
-
 
 }
 
@@ -137,4 +143,12 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#method_id{
+    background-color: #FFE4E8;
+    border-radius: 5px;
+    font-family: "Jua";
+    font-size:  1.5em;
+    margin: 2em;
+    margin-top: 1em;
 }
