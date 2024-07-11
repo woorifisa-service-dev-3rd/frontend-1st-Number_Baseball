@@ -7,7 +7,6 @@
 
 html,
 body {
-    margin: 0;
     height: 100%;
 }
 
@@ -39,6 +38,7 @@ input::-webkit-inner-spin-button {
 .answer {
     padding: 10px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .log {
@@ -74,7 +74,7 @@ input::-webkit-inner-spin-button {
     width: 100px;
     /* bgco - back ground color */
     background-color: #b9e6fe;
-    font-size: 50px;
+    font-size: 3em;
     padding: 20px;
     margin: 10px;
     border: 0;
@@ -147,8 +147,7 @@ input::-webkit-inner-spin-button {
     background-color: #FFE4E8;
     border-radius: 5px;
     font-size: 1.5em;
-    margin: 2em;
-    margin-top: 1em;
+    margin: 3em;
     padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
