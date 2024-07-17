@@ -15,15 +15,4 @@ inputs.forEach((input, index) => {
     });
 });
 
-const inputs2 = document.querySelectorAll('input[id^="number"]');
-inputs2.forEach((input, index) => {
-    input.addEventListener('keyup', function (event) {
-        const key = event.key;
 
-        if (key !== 'Backspace' && key !== 'Delete') {
-            if (index < 4) {
-                inputs[index + 1].focus();
-            }
-        }
-    });
-});
