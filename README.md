@@ -1,7 +1,7 @@
 ## Number_Baseball 🎮
 간단하게 해볼 수 있는 숫자 야구 게임을 즐길 수 있는 웹사이트 입니다.
 
-![페이지 시연](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
+![페이지 시연](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
 
 
 <br>
@@ -27,9 +27,9 @@
 
 <br>
 
-### Light house 개선과정
+### Light house 측정결과
 
-![lighthouse](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/%EB%9D%BC%EC%9D%B4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4.png)
+![lighthouse](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/%EB%9D%BC%EC%9D%B4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4.png)
 
 
 
@@ -48,11 +48,13 @@
 ### UI 스타일 가이드
 - 폰트 : Jua
 
-![font](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/bang/img_/font.jpg)
+![font](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/font.jpg)
 
 
 
 
-- 색상 : #FFE4E8, #B9E6FE, #007AFF, #FCFCFD, #D0D5DD
+- 색상 : #FFE4E8, #B9E6FE, #FCFCFD, #D0D5DD
 
+  
+![color](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/%EC%83%89%EC%83%81.png)
  
