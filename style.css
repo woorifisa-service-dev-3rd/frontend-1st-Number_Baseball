@@ -41,7 +41,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.log {
+.logCount {
     border: none;
     border-radius: 10px;
     outline: none;
