@@ -5,6 +5,7 @@
     font-family: "Jua";
 }
 
+
 html,
 body {
     margin: 0;
@@ -159,6 +160,7 @@ input::-webkit-inner-spin-button {
     background-color: #FFE4E8;
 }
 
+
 .animated-text {
     font-size: 1.5em;
     color: #333;
@@ -185,18 +187,56 @@ input::-webkit-inner-spin-button {
     }
 }
 
+/* hidden box 수정 */
 .hiddenbox {
     display: none;
-    /* 초기에는 숨김 */
+    border-radius: 10px;
     position: absolute;
-    /* 절대 위치 */
-    background-color: #f0f0f0;
+    left: 30%;
+    background-color: #FCFCFD;
     padding: 10px;
-    border: 1px solid #ccc;
+    width: 650px;
+    border: 1px solid #D0D5DD;
+    z-index: 2;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* 마우스를 갖다 대었을 때 보이게 만듦 */
-.hiddenbox: :hover {
+.hiddenbox1:hover .hiddenbox {
     display: block;
-    /* 호버 상태에서는 보임 */
+
+}
+
+
+.hiddenbox21 {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #FCFCFD;
+    padding: 10px;
+    border: 1px solid #D0D5DD;
+    z-index: 2;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hiddenbox2:hover .hiddenbox21 {
+    display: block;
+
+}
+
+
+
+/* 특정 글자 색깔 입력 */
+.text-warning {
+    color: red;
+    font-size: 1.2em;
+}
+
+.stlike {
+    color: blue;
+    font-size: 1.2em;
+}
+
+.ball {
+    color: green;
+    font-size: 1.2em;
 }
