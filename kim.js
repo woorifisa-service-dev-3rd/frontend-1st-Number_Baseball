@@ -19,7 +19,6 @@ const inputs2 = document.querySelectorAll('input[id^="number"]');
 inputs.forEach((input, index) => {
     input.addEventListener('keyup', function (event) {
         const key = event.key;
-
         if (key !== 'Backspace' && key !== 'Delete') {
             if (index < 4) {
                 inputs[index + 1].focus();
@@ -67,14 +66,7 @@ function b(a, b, c, d) {
     // })
 }
 
-
-
-
-
 // 버튼 클릭 이벤트 처리
-
-
-// 키보드 중복방지 함수 입력을 위한 내용 위치 이동 -->31~34 line
 
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
@@ -121,15 +113,17 @@ function a(btn) {
 
 function disableAllButtonsExceptSelected() {
     // 모든 버튼을 찾아서 disabled 처리
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll('.btn-primary');
     buttons.forEach(button => {
-        if (!button.disabled) {
-            if (button.id !== 'reset' && button.id !== 'answer' && button.id !== 'method_id')
+        button => {
+            if (!button.disabled) {
                 button.disabled = true;
+            }
         }
+
         function resetInputs() {
-            const buttons = document.querySelectorAll('button');
-            var inputs = document.querySelectorAll('input[id^="number"]');
+            const buttons = document.querySelectorAll('.btn-primary');
+            let inputs = document.querySelectorAll('input[id^="number"]');
             inputs.forEach(input => {
                 input.value = '';
             });
@@ -139,11 +133,11 @@ function disableAllButtonsExceptSelected() {
             })
         }
         const resetButton = document.getElementById('reset');
+        const answerButton = document.getElementById('answer');
         resetButton.addEventListener('click', resetInputs);
+        answerButton.addEventListener('click', resetInputs);
     });
 };
-
-// 불필요 주석 제거
 
 btn1.addEventListener('click', () => {
     a(btn1);
@@ -186,36 +180,3 @@ btn0.addEventListener('click', () => {
 });
 
 
-
-
-
-
-function generateRandomNumbers() {
-    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let result = [];
-
-
-    for (let i = 0; i < 4; i++) {
-        // 랜덤한 인덱스 선택
-        const randomIndex = Math.floor(Math.random() * numbers.length);
-        // 선택된 숫자 추출
-        const selectedNumber = numbers[randomIndex];
-        // 결과 배열에 추가
-        result.push(selectedNumber);
-        // 배열에서 선택된 숫자 제거
-        numbers.splice(randomIndex, 1);
-    }
-
-    return result;
-}
-
-// 불필요 내용 제거 + 사용자가 입력한 숫자 배열을 가져오는 함수
-function getUserInput() {
-    return [
-        parseInt(input1.value),
-        parseInt(input2.value),
-        parseInt(input3.value),
-        parseInt(input4.value)
-    ];
-
-}
