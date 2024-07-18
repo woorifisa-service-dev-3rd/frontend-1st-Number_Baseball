@@ -28,6 +28,42 @@ inputs.forEach((input, index) => {
     });
 });
 
+input1.addEventListener('input', () => {
+    b(1, 2, 3);
+})
+input2.addEventListener('input', () => {
+    b(0, 2, 3);
+})
+input3.addEventListener('input', () => {
+    b(0, 1, 3);
+})
+input4.addEventListener('input', () => {
+    b(0, 1, 2);
+})
+
+function b(a, b, c) {
+    let keynum = ['', '', '', ''];
+
+    if (input1.value) {
+        keynum[0] = input1.value;
+    } else if (input2.value) {
+        keynum[1] = input1.value;
+    } else if (input3.value) {
+        keynum[2] = input1.value;
+    } else if (input4.value) {
+        keynum[3] = input1.value;
+    };
+
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach(input => {
+        if (input.value === keynum[a] || input.value === keynum[b] || input.value === keynum[c]) {
+            input.value = '';
+        }
+    })
+}
+
+
+
 
 
 // 버튼 클릭 이벤트 처리
@@ -49,6 +85,9 @@ const btn8 = document.getElementById('btn_8');
 const btn9 = document.getElementById('btn_9');
 const btn0 = document.getElementById('btn_0');
 
+const reset = document.getElementById('reset');
+const answer = document.getElementById('answer');
+const method = document.getElementById('method_id');
 
 //버튼이 한번 눌리면 두번 이상 눌리지 않도록
 //reset 누르면 다시 누를 수 있도록
@@ -83,7 +122,7 @@ function disableAllButtonsExceptSelected() {
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
         if (!button.disabled) {
-            if (button.id !== 'method_id2' && button.id !== 'answer' && button.id !== 'method_id')
+            if (button.id !== 'reset' && button.id !== 'answer' && button.id !== 'method_id')
                 button.disabled = true;
         }
         function resetInputs() {
@@ -97,7 +136,7 @@ function disableAllButtonsExceptSelected() {
                 button.disabled = false;
             })
         }
-        const resetButton = document.getElementById('method_id2');
+        const resetButton = document.getElementById('reset');
         resetButton.addEventListener('click', resetInputs);
     });
 };

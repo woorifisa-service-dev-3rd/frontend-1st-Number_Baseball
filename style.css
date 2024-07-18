@@ -41,7 +41,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.log {
+.logCount {
     border: none;
     border-radius: 10px;
     outline: none;
@@ -136,7 +136,9 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-#method_id {
+#method_id,
+#answer,
+#reset {
     background-color: #FFE4E8;
     border-radius: 5px;
 
