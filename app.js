@@ -19,11 +19,12 @@ const btn8 = document.getElementById('btn8');
 const btn9 = document.getElementById('btn9');
 const btn0 = document.getElementById('btn0');
 
+const reset = document.getElementById('reset');
+const answer = document.getElementById('answer');
+const method = document.getElementById('method_id');
+
 
 //버튼이 한번 눌리면 두번 이상 눌리지 않도록
-//reset 누르면 다시 누를 수 있도록
-
-
 
 function a(btn) {
 
@@ -41,55 +42,24 @@ function a(btn) {
 
     btn.disabled = true;
 
+    if (input1.value !== '' && input2.value !== '' && input3.value !== '' && input4.value !== '') {
+        disableAllButtonsExceptSelected();
+    }
 
+
+}
+
+function disableAllButtonsExceptSelected() {
+    // 모든 버튼을 찾아서 disabled 처리
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        if (!button.disabled) {
+            if (button.id !== 'reset' && button.id !== 'answer' && button.id !== 'method_id')
+                button.disabled = true;
+        }
+
+    });
 };
-
-
-// function resetClick(btn) {
-
-//     btn.disabled = false;
-// };
-
-
-
-
-
-// // const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-// let selectedNumbers = ['', '', '', ''];
-
-// input1.addEventListener('input', function () {
-//     handleInput(input1, 0);
-// });
-
-// input2.addEventListener('input', function () {
-//     handleInput(input2, 1);
-// });
-
-// input3.addEventListener('input', function () {
-//     handleInput(input3, 2);
-// });
-
-// input4.addEventListener('input', function () {
-//     handleInput(input4, 3);
-// });
-
-
-// function handleInput(input, index) {
-
-//     let value = input.value();
-
-//     if (selectedNumbers.includes(value)) {
-//         input.value = '';
-//         return;
-//     }
-
-//     selectedNumbers[index] = value;
-
-// };
-
-
-
 
 
 btn1.addEventListener('click', () => {
@@ -134,51 +104,66 @@ btn0.addEventListener('click', () => {
 
 
 
-
+// 제출 버튼이 눌리면, 랜덤으로 생성된 4가지 숫자 조합과 입력된 숫자 조합을 비교하여 출력
 
 
 function generateRandomNumbers() {
     let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     let result = [];
 
-
     for (let i = 0; i < 4; i++) {
-        // 랜덤한 인덱스 선택
         const randomIndex = Math.floor(Math.random() * numbers.length);
-        // 선택된 숫자 추출
         const selectedNumber = numbers[randomIndex];
-        // 결과 배열에 추가
         result.push(selectedNumber);
-        // 배열에서 선택된 숫자 제거
         numbers.splice(randomIndex, 1);
     }
 
     return result;
 }
 
-function checkGuess(randomNumbers, userInput) {
-    let stlike = 0; // 맞은 숫자와 자리 모두 일치하는 개수 (Bulls)
-    let ball = 0;  // 맞은 숫자는 맞지만 자리는 다른 개수 (Cows)
-
-    for (let i = 0; i < randomNumbers.length; i++) {
-        if (randomNumbers[i] === userInput[i]) {
-            stlike++;
-        } else if (randomNumbers.includes(userInput[i])) {
-            ball++;
-        }
-    }
-
-    return { stlike, ball };
+// 사용자가 입력한 숫자 배열을 가져오는 함수
+function getUserInput() {
+    return [
+        parseInt(input1.value),
+        parseInt(input2.value),
+        parseInt(input3.value),
+        parseInt(input4.value)
+    ];
 }
 
-// 랜덤 숫자 생성
-const randomNumbers = generateRandomNumbers();
-console.log('Random Numbers:', randomNumbers);
+// answer.addEventListener('click', () => {
+//     const randomNumbers = generateRandomNumbers(); // 랜덤 숫자 생성
+//     const userInput = getUserInput(); // 사용자 입력 숫자 배열 가져오기
 
-// 사용자 입력 (임의로 예시로 설정)
-const userInput = [1, 2, 3, 4]; // 사용자가 입력한 숫자 배열
+//     console.log('Random Numbers:', randomNumbers);
+//     console.log('User Input:', userInput);
 
-// 비교
-const result = checkGuess(randomNumbers, userInput);
-console.log('Bulls:', result.stlike); // Bulls 개수 출력
-console.log('Cows:', result.ball);   // Cows 개수 출력
+//     const result = checkGuess(randomNumbers, userInput); // 결과 계산
+//     console.log('Stlike:', result.stlike); // Bulls 개수 출력
+//     console.log('Ball:', result.ball);   // Cows 개수 출력
+
+//     // 결과를 HTML에 표시하는 부분은 실제로는 여기에 구현해야 합니다.
+
+//     resetInputFields(); // 입력 필드 초기화
+// });
+
+// // 숫자와 자리 일치 여부를 확인하는 함수
+// function checkGuess(randomNumbers, userInput) {
+//     let stlike = 0; // 맞은 숫자와 자리 모두 일치하는 개수 (Bulls)
+//     let ball = 0;    // 맞은 숫자는 맞지만 자리는 다른 개수 (Cows)
+
+//     for (let i = 0; i < randomNumbers.length; i++) {
+//         if (randomNumbers[i] === userInput[i]) {
+//             stlike++;
+//         } else if (randomNumbers.includes(userInput[i])) {
+//             ball++;
+//         }
+//     }
+
+//     return { stlike, ball };
+// }
+
+// // 게임 시작 함수
+
+
+
