@@ -83,7 +83,11 @@ function a(btn) {
 function disableAllButtonsExceptSelected() {
     // 모든 버튼을 찾아서 disabled 처리
     const buttons = document.querySelectorAll('.btn-primary');
+    
     buttons.forEach(button => {
+        if(!button.disabled){
+            button.disabled=true
+        }
         //이부분 삭제했음 function전까지
         function resetInputs() {
             const buttons = document.querySelectorAll('.btn-primary');
