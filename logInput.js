@@ -1,14 +1,19 @@
-const log_box= document.getElementById('log_contain');
+import {value1} from './generate_num.js';
+
+const log_box= document.getElementsByClassName('log_container')[0];
 const  answer_btn=document.getElementById('answer');
 
-const answer_1=document.getElementById('ex1').textContent;
-const answer_2=document.getElementById('ex2').textContent;
-const answer_3=document.getElementById('ex3').textContent;
-const answer_4=document.getElementById('ex4').textContent;
-const answer_list= [answer_1,answer_2,answer_3,answer_4];
+// const answer_1=document.getElementById('ex1').textContent;
+// const answer_2=document.getElementById('ex2').textContent;
+// const answer_3=document.getElementById('ex3').textContent;
+// const answer_4=document.getElementById('ex4').textContent;
+// const answer_list= [answer_1,answer_2,answer_3,answer_4];
+
+const answer_list=[value1[0],value1[1],value1[2],value1[3]];
+console.log(answer_list);
 
 answer_btn.addEventListener('click',()=>{
-    let logs= document.querySelectorAll('.logCount').length;
+    let logs= document.querySelectorAll('.log').length;
 
     if(logs<=9){
         let out=4;
@@ -49,7 +54,7 @@ answer_btn.addEventListener('click',()=>{
             OText = `${out} OUT`;
         }
         const newBox = document.createElement('div');
-        newBox.classList.add('logCount', 'animated-text');
+        newBox.classList.add('log', 'animated-text');
         newBox.innerHTML = `
                 <div style="margin: 0.1em;">
                     <strong>${input[0]}</strong>
