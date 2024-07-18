@@ -15,13 +15,16 @@ inputs.forEach((input, index) => {
     });
 });
 
-const inputs2 = document.querySelectorAll('input[id^="number"]');
+
 inputs.forEach((input, index) => {
     input.addEventListener('keyup', function (event) {
-        const key = event.key;
+        const key = event.target.value;
         if (key !== 'Backspace' && key !== 'Delete') {
-            if (index < 4) {
-                inputs[index + 1].focus();
+            if (key >= '0' && key <= '9') {
+                if (index < 4) {
+                    inputs[index + 1].focus();
+                }
+
             }
         }
     });
@@ -44,6 +47,9 @@ input3.addEventListener('input', () => {
 })
 input4.addEventListener('input', () => {
     b(0, 1, 2, 3);
+    if(input4.value !== ''){
+        answer.disabled=false;
+    }
 })
 
 function b(a, b, c, d) {
@@ -54,6 +60,7 @@ function b(a, b, c, d) {
     })
     if (inputs[d].value === keynum[a] || inputs[d].value === keynum[b] || inputs[d].value === keynum[c]) {
         inputs[d].value = '';
+        inputs[d].focus();
     };
 
 
@@ -105,6 +112,7 @@ function a(btn) {
     btn.disabled = true;
 
     if (input1.value !== '' && input2.value !== '' && input3.value !== '' && input4.value !== '') {
+        answer.disabled=false
         disableAllButtonsExceptSelected();
     }
 
@@ -114,12 +122,12 @@ function a(btn) {
 function disableAllButtonsExceptSelected() {
     // 모든 버튼을 찾아서 disabled 처리
     const buttons = document.querySelectorAll('.btn-primary');
-    
     buttons.forEach(button => {
-        if(!button.disabled){
-            button.disabled=true
+        button => {
+            if (!button.disabled) {
+                button.disabled = true;
+            }
         }
-        //이부분 삭제했음 function전까지
 
         function resetInputs() {
             const buttons = document.querySelectorAll('.btn-primary');
@@ -178,5 +186,4 @@ btn9.addEventListener('click', () => {
 btn0.addEventListener('click', () => {
     a(btn0);
 });
-
 

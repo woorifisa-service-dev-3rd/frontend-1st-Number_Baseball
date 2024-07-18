@@ -1,7 +1,9 @@
 import {value1} from './generate_num.js';
 
+const inputs = document.querySelectorAll('input[id^="number"]');
+
 const log_box= document.getElementsByClassName('log_container')[0];
-const  answer_btn=document.getElementById('answer');
+const answer_btn=document.getElementById('answer');
 
 // const answer_1=document.getElementById('ex1').textContent;
 // const answer_2=document.getElementById('ex2').textContent;
@@ -12,10 +14,14 @@ const  answer_btn=document.getElementById('answer');
 const answer_list=[value1[0],value1[1],value1[2],value1[3]];
 console.log(answer_list);
 
+
 answer_btn.addEventListener('click',()=>{
+    answer.disabled=true
+
     let logs= document.querySelectorAll('.log').length;
 
     if(logs<=9){
+        
         let out=4;
         let strike=0;
         let ball=0;
@@ -81,6 +87,7 @@ answer_btn.addEventListener('click',()=>{
             
 
         }
+        document.getElementById('number1').focus();
     }
    
 });
