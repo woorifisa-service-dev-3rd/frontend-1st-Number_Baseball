@@ -136,7 +136,9 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-#method_id {
+#method_id,
+#answer,
+#reset {
     background-color: #FFE4E8;
     border-radius: 5px;
 
@@ -180,4 +182,20 @@ input::-webkit-inner-spin-button {
     100% {
         transform: translateY(0);
     }
+}
+
+.hiddenbox {
+    display: none;
+    /* 초기에는 숨김 */
+    position: absolute;
+    /* 절대 위치 */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 마우스를 갖다 대었을 때 보이게 만듦 */
+.hiddenbox: :hover {
+    display: block;
+    /* 호버 상태에서는 보임 */
 }

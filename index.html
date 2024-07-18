@@ -17,10 +17,6 @@
 </head>
 
 <body>
-    <div id="ex1">1</div>
-    <div id="ex2">2</div>
-    <div id="ex3">3</div>
-    <div id="ex4">4</div>
     <div class="main_container">
         <div>
             <div class="title">
@@ -32,6 +28,7 @@
                 <button type="button" style="margin-left: 1em; " id="method_id"><strong>게임
                         방법</strong></button>
             </div>
+
             <div class="hiddenbox" id="hiddenbox" width="500px" height="400px">
                 <h2>게임 진행 방법</h2>
                 <h3> 순서가 정해진! 중복이 없는! <br>
@@ -45,6 +42,7 @@
                 </p>
 
             </div>
+
 
 
             <form class="container" id="container1">
@@ -77,51 +75,48 @@
                         id="number4">
                 </div>
             </form>
-
             <div class="button_container">
                 <div id="number_button1">
 
-                    <button type="button" class="btn-primary" id="btn1">
-
-                        <strong> 1 </strong>
+                    <button type="button" class="btn-primary" id="btn_1">
+                        <strong>1</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn2">
-                        <strong> 2 </strong>
+                    <button type="button" class="btn-primary" id="btn_2">
+                        <strong>2</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn3">
-                        <strong> 3 </strong>
+                    <button type="button" class="btn-primary" id="btn_3">
+                        <strong>3</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn4">
+                    <button type="button" class="btn-primary" id="btn_4">
                         <strong>4</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn5">
-
+                    <button type="button" class="btn-primary" id="btn_5">
                         <strong>5</strong>
                     </button>
                 </div>
 
                 <div id="number_button2">
-
-                    <button type="button" class="btn-primary" id="btn6">
+                    <button type="button" class="btn-primary" id="btn_6">
                         <strong>6</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn7">
+                    <button type="button" class="btn-primary" id="btn_7">
                         <strong>7</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn8">
+                    <button type="button" class="btn-primary" id="btn_8">
                         <strong>8</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn9">
+                    <button type="button" class="btn-primary" id="btn_9">
                         <strong>9</strong>
                     </button>
-                    <button type="button" class="btn-primary" id="btn0">
-
+                    <button type="button" class="btn-primary" id="btn_0">
                         <strong>0</strong>
                     </button>
                 </div>
                 <div>
+
+
                     <button type="button" style="margin-left: 1em; " id="answer"><strong>제출</strong></button>
-                    <button type="button" style="margin-left: 1em; " id="reset_btn"><strong>리셋</strong></button>
+                    <button type="button" style="margin-left: 1em; " id="reset"><strong>리셋</strong></button>
                 </div>
 
             </div>
@@ -131,9 +126,22 @@
         <article id="logBoard">
             <div>
                 <div id="logList">
-                    <strong style="font-size: 50px;">이전 결과</strong>
-                    <div class="log_container" id="log_contain">
-                        <div class="logCount animated-text">
+                    <strong style="font-size: 50px;">Log</strong>
+                    <div class="log_container">
+                        <div class="log animated-text">
+                            <div style="margin: 0.1em;">
+                                <strong>1</strong>
+                                <strong>2</strong>
+                                <strong>3</strong>
+                                <strong>3</strong>
+                            </div>
+                            <div style="margin: 0.1em;">
+                                <strong>1 S</strong>
+                                <strong>1 B</strong>
+                                <strong>2 OUT</strong>
+                            </div>
+                        </div>
+                        <div class="log animated-text">
                             <div style="margin: 0.1em;">
                                 <strong>1</strong>
                                 <strong>2</strong>
@@ -153,7 +161,7 @@
         </article>
 
     </div>
-    
+
     <footer>
     </footer>
 </body>
