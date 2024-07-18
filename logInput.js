@@ -1,8 +1,11 @@
-
 import { value1 } from './generate_num.js';
 
-const log_box = document.getElementsByClassName('log_container')[0];
-const answer_btn = document.getElementById('answer');
+const inputs = document.querySelectorAll('input[id^="number"]');
+
+const log_box= document.getElementsByClassName('log_container')[0];
+const answer_btn=document.getElementById('answer');
+
+
 
 // const answer_1=document.getElementById('ex1').textContent;
 // const answer_2=document.getElementById('ex2').textContent;
@@ -13,17 +16,21 @@ const answer_btn = document.getElementById('answer');
 const answer_list = [value1[0], value1[1], value1[2], value1[3]];
 console.log(answer_list);
 
-answer_btn.addEventListener('click', () => {
-    let logs = document.querySelectorAll('.log').length;
 
+answer_btn.addEventListener('click',()=>{
+    answer.disabled=true
 
-    if (logs <= 9) {
-        let out = 4;
-        let strike = 0;
-        let ball = 0;
-        let first = document.getElementById('number1').value;
-        const second = document.getElementById('number2').value;
-        const third = document.getElementById('number3').value;
+    let logs= document.querySelectorAll('.log').length;
+
+    if(logs<=9){
+        
+        let out=4;
+        let strike=0;
+        let ball=0;
+        let first= document.getElementById('number1').value;
+        const second= document.getElementById('number2').value;
+        const third= document.getElementById('number3').value;
+
         const fourth = document.getElementById('number4').value;
 
         const input = [first, second, third, fourth];
@@ -85,7 +92,8 @@ answer_btn.addEventListener('click', () => {
             displayLosePopup();
         }
 
-    };
+        document.getElementById('number1').focus();
+    }
 });
 
 function displayVictoryPopup() {

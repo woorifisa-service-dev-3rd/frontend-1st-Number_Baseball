@@ -14,16 +14,18 @@ inputs.forEach((input, index) => {
         }
     });
 });
-//2.
-const inputs2 = document.querySelectorAll('input[id^="number"]');
+
+
 inputs.forEach((input, index) => {
     input.addEventListener('input', function (event) {
+
         const key = event.target.value;
         if (key !== 'Backspace' && key !== 'Delete') {
             if (key >= '0' && key <= '9') {
                 if (index < 4) {
                     inputs[index + 1].focus();
                 }
+
             }
         }
     });
@@ -46,6 +48,9 @@ input3.addEventListener('input', () => {
 })
 input4.addEventListener('input', () => {
     b(0, 1, 2, 3);
+    if(input4.value !== ''){
+        answer.disabled=false;
+    }
 })
 //3.
 function b(a, b, c, d) {
@@ -108,6 +113,7 @@ function a(btn) {
     btn.disabled = true;
 
     if (input1.value !== '' && input2.value !== '' && input3.value !== '' && input4.value !== '') {
+        answer.disabled=false
         disableAllButtonsExceptSelected();
     }
 
@@ -181,5 +187,4 @@ btn9.addEventListener('click', () => {
 btn0.addEventListener('click', () => {
     a(btn0);
 });
-
 
