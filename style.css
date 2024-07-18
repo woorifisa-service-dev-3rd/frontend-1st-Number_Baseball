@@ -42,7 +42,8 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.logCount {
+/* log로 이름 바꿈 */
+.log {
     border: none;
     border-radius: 10px;
     outline: none;

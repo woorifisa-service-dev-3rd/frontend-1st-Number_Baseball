@@ -12,3 +12,6 @@ window.addEventListener('click', (e) => {
         closePopup();
     }
 });
+
+
+
