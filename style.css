@@ -249,7 +249,7 @@ input::-webkit-inner-spin-button {
 
 /* 게임 클리어 및 실패시 뜨는 팝업창 */
 
-.popup {
+.victoryPopup {
     display: none;
     position: fixed;
     top: 0;
@@ -259,6 +259,18 @@ input::-webkit-inner-spin-button {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
+
+.losePopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
 
 .popup-container {
     background-color: white;
@@ -270,6 +282,7 @@ input::-webkit-inner-spin-button {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+
 
 .close {
     float: right;

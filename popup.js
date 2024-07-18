@@ -71,14 +71,14 @@ answer_btn.addEventListener('click', () => {
 
         if (strike === 4) {
             displayVictoryPopup(); // 스트라이크 4개일 때 정답 팝업 표시
-        } else if (logs >= 9) {
-            displayLosePopup(); // 9개 이상의 로그가 쌓였을 때 실패 팝업 표시
+        } else if (logs === 9) {
+            displayLosePopup(); // 9개의 로그가 쌓였을 때 실패 팝업 표시
         }
     }
 });
 
 function displayVictoryPopup() {
-    const victoryPopup = document.getElementById('victory');
+    const victoryPopup = document.getElementById('victoryPopup');
     const closeVictoryPopupBtn = document.getElementById('closeVictoryPopupBtn');
 
     victoryPopup.style.display = 'block'; // 정답 팝업 표시
@@ -89,7 +89,7 @@ function displayVictoryPopup() {
 }
 
 function displayLosePopup() {
-    const losePopup = document.getElementById('lose');
+    const losePopup = document.getElementById('losePopup');
     const closeLosePopupBtn = document.getElementById('closeLosePopupBtn');
 
     losePopup.style.display = 'block'; // 실패 팝업 표시

@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <script type="module" defer src="generate_num.js"></script>
 
-    <script type="module" defer src="logInput.js"></script>
+    <!-- <script type="module" defer src="logInput.js"></script> -->
     <script defer src="kim.js"></script>
-    <script defer src="popup.js"></script>
+    <script type="module" defer src="popup.js"></script>
 
 
 </head>
@@ -143,32 +143,7 @@
                 <div id="logList">
                     <strong style="font-size: 50px;">Log</strong>
                     <div class="log_container">
-                        <div class="log animated-text">
-                            <div style="margin: 0.1em;">
-                                <strong>1</strong>
-                                <strong>2</strong>
-                                <strong>3</strong>
-                                <strong>3</strong>
-                            </div>
-                            <div style="margin: 0.1em;">
-                                <strong>1 S</strong>
-                                <strong>1 B</strong>
-                                <strong>2 OUT</strong>
-                            </div>
-                        </div>
-                        <div class="log animated-text">
-                            <div style="margin: 0.1em;">
-                                <strong>1</strong>
-                                <strong>2</strong>
-                                <strong>3</strong>
-                                <strong>3</strong>
-                            </div>
-                            <div style="margin: 0.1em;">
-                                <strong>1 S</strong>
-                                <strong>1 B</strong>
-                                <strong>2 OUT</strong>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -181,7 +156,7 @@
     <!-- 게임 완료 및 실패시 popup 창 -->
 
     <div class="popup">
-        <div id="victory" class="victory">
+        <div id="victoryPopup" class="victoryPopup">
             <div class="popup-container">
                 <span class="close" id="closeVictoryPopupBtn">&times;</span>
                 <h1 id="popupMessage1">정답입니다!</h1><br>
@@ -189,7 +164,7 @@
             </div>
         </div>
 
-        <div id="lose" class="lose">
+        <div id="losePopup" class="losePopup">
             <div class="popup-container">
                 <span class="close" id="closeLosePopupBtn">&times;</span>
                 <h1 id="popupMessage2">틀렸습니다ㅠㅠ</h1><br>
