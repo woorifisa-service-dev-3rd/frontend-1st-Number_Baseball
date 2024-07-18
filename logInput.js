@@ -1,5 +1,5 @@
 const log_box= document.getElementById('log_contain');
-const  answer_btn=document.getElementById('answer_btn');
+const  answer_btn=document.getElementById('answer');
 
 const answer_1=document.getElementById('ex1').textContent;
 const answer_2=document.getElementById('ex2').textContent;
