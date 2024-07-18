@@ -1,7 +1,7 @@
 window.onload = function () {
     document.getElementById('number1').focus();
 };
-
+//1.
 const inputs = document.querySelectorAll('input[id^="number"]');
 inputs.forEach((input, index) => {
     input.addEventListener('keyup', function (event) {
@@ -17,7 +17,8 @@ inputs.forEach((input, index) => {
 
 
 inputs.forEach((input, index) => {
-    input.addEventListener('keyup', function (event) {
+    input.addEventListener('input', function (event) {
+
         const key = event.target.value;
         if (key !== 'Backspace' && key !== 'Delete') {
             if (key >= '0' && key <= '9') {
@@ -51,7 +52,7 @@ input4.addEventListener('input', () => {
         answer.disabled=false;
     }
 })
-
+//3.
 function b(a, b, c, d) {
     let keynum = ['', '', '', ''];
     const inputs = document.querySelectorAll('input[id^=number]');
