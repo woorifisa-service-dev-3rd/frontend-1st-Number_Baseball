@@ -72,20 +72,18 @@ answer_btn.addEventListener('click', () => {
             `;
 
         log_box.appendChild(newBox);
+
+        // 성공 또는 실패시 팝업창 추가 
         document.getElementById('number1').value = '';
         document.getElementById('number2').value = '';
         document.getElementById('number3').value = '';
         document.getElementById('number4').value = '';
 
-        console.log(logs);
-
-        // 정답여부에 따른 팝업 표시
         if (strike === 4) {
-            displayVictoryPopup(); // 스트라이크 4개일 때 정답 팝업 표시
-        } else if (logs === 9) {
-            displayLosePopup(); // 9개 이상의 로그가 쌓였을 때 실패 팝업 표시
+            displayVictoryPopup();
+        } else if (logs === 8) {
+            displayLosePopup();
         }
-
 
     };
 });
@@ -99,15 +97,15 @@ function displayVictoryPopup() {
     closeVictoryPopupBtn.addEventListener('click', () => {
         victoryPopup.style.display = 'none';
     });
-}
+};
 
 function displayLosePopup() {
     const losePopup = document.getElementById('losePopup');
     const closeLosePopupBtn = document.getElementById('closeLosePopupBtn');
 
-    losePopup.style.display = 'block'; // 실패 팝업 표시
+    losePopup.style.display = 'block';
 
     closeLosePopupBtn.addEventListener('click', () => {
-        losePopup.style.display = 'none'; // 팝업 닫기
+        losePopup.style.display = 'none';
     });
-}
+};

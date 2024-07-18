@@ -63,7 +63,6 @@ answer_btn.addEventListener('click', () => {
 
         log_box.appendChild(newBox);
 
-        // 입력 초기화
         document.getElementById('number1').value = '';
         document.getElementById('number2').value = '';
         document.getElementById('number3').value = '';
@@ -71,7 +70,7 @@ answer_btn.addEventListener('click', () => {
 
         if (strike === 4) {
             displayVictoryPopup(); // 스트라이크 4개일 때 정답 팝업 표시
-        } else if (logs === 9) {
+        } else if (logs === 8) {
             displayLosePopup(); // 9개의 로그가 쌓였을 때 실패 팝업 표시
         }
     }
