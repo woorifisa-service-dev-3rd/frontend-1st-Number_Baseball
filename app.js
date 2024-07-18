@@ -45,10 +45,10 @@ function a(btn) {
 };
 
 
-function resetClick(btn) {
+// function resetClick(btn) {
 
-    btn.disabled = false;
-};
+//     btn.disabled = false;
+// };
 
 
 
