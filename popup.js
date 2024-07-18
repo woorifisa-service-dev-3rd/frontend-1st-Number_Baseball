@@ -1,21 +1,12 @@
-
 import { value1 } from './generate_num.js';
 
 const log_box = document.getElementsByClassName('log_container')[0];
 const answer_btn = document.getElementById('answer');
 
-// const answer_1=document.getElementById('ex1').textContent;
-// const answer_2=document.getElementById('ex2').textContent;
-// const answer_3=document.getElementById('ex3').textContent;
-// const answer_4=document.getElementById('ex4').textContent;
-// const answer_list= [answer_1,answer_2,answer_3,answer_4];
-
 const answer_list = [value1[0], value1[1], value1[2], value1[3]];
-console.log(answer_list);
 
 answer_btn.addEventListener('click', () => {
     let logs = document.querySelectorAll('.log').length;
-
 
     if (logs <= 9) {
         let out = 4;
@@ -32,8 +23,7 @@ answer_btn.addEventListener('click', () => {
                 if (input[i] == answer_list[j]) {
                     if (i == j) {
                         strike++;
-                    }
-                    else {
+                    } else {
                         ball++;
                     }
                 }
@@ -41,7 +31,6 @@ answer_btn.addEventListener('click', () => {
         }
 
         out = out - strike - ball;
-        console.log(strike, ball, out);
 
         let BText = '';
         if (ball !== 0) {
@@ -55,6 +44,7 @@ answer_btn.addEventListener('click', () => {
         if (out !== 0) {
             OText = `${out} OUT`;
         }
+
         const newBox = document.createElement('div');
         newBox.classList.add('log', 'animated-text');
         newBox.innerHTML = `
@@ -73,39 +63,37 @@ answer_btn.addEventListener('click', () => {
 
         log_box.appendChild(newBox);
 
-        // 성공 또는 실패시 팝업창 추가 
         document.getElementById('number1').value = '';
         document.getElementById('number2').value = '';
         document.getElementById('number3').value = '';
         document.getElementById('number4').value = '';
 
         if (strike === 4) {
-            displayVictoryPopup();
+            displayVictoryPopup(); // 스트라이크 4개일 때 정답 팝업 표시
         } else if (logs === 8) {
-            displayLosePopup();
+            displayLosePopup(); // 9개의 로그가 쌓였을 때 실패 팝업 표시
         }
-
-    };
+    }
 });
 
 function displayVictoryPopup() {
     const victoryPopup = document.getElementById('victoryPopup');
     const closeVictoryPopupBtn = document.getElementById('closeVictoryPopupBtn');
 
-    victoryPopup.style.display = 'block';
+    victoryPopup.style.display = 'block'; // 정답 팝업 표시
 
     closeVictoryPopupBtn.addEventListener('click', () => {
-        victoryPopup.style.display = 'none';
+        victoryPopup.style.display = 'none'; // 팝업 닫기
     });
-};
+}
 
 function displayLosePopup() {
     const losePopup = document.getElementById('losePopup');
     const closeLosePopupBtn = document.getElementById('closeLosePopupBtn');
 
-    losePopup.style.display = 'block';
+    losePopup.style.display = 'block'; // 실패 팝업 표시
 
     closeLosePopupBtn.addEventListener('click', () => {
-        losePopup.style.display = 'none';
+        losePopup.style.display = 'none'; // 팝업 닫기
     });
-};
+}
