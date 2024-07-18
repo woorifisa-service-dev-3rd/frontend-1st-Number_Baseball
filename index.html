@@ -13,6 +13,7 @@
     <script defer src="app.js"></script>
     <script defer src="logInput.js"></script>
     <script defer src="kim.js"></script>
+    <script defer src="popup.js"></script>
 
 </head>
 
@@ -123,7 +124,7 @@
                 </div>
 
                 <!-- class hiddenbox 추가 (버튼 설명) 설정 -->
-                <div>
+                <div style="display: flex; justify-content: flex-end;">
                     <button type="button" style="margin-left: 1em;" class="hiddenbox2" id="answer"><strong>제출</strong>
                         <div class="hiddenbox21" id="hiddenbox21">
                             결과 제출
@@ -179,6 +180,32 @@
         </article>
 
     </div>
+
+
+    <!-- 게임 완료 및 실패시 popup 창 -->
+
+    <div class="popup">
+
+        <div id="victory" class="victory">
+            <div class="popup-container">
+                <span class="close" id="closePopupBtn">&times;</span>
+                <h1 id="popupMessage">정답입니다!</h1><br>
+                <p>정말 대단해요! <br> 하지만, 다음게임은 제가 이길걸요?</p>
+            </div>
+        </div>
+
+        <div id="lose" class="lose">
+            <div class="popup-container">
+                <span class="close" id="closePopupBtn">&times;</span>
+                <h1 id="popupMessage">틀렸습니다ㅠㅠ</h1><br>
+                <p>다시 한게임 더? <br>이번에도 지지 않을거에요!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
 
     <footer>
     </footer>
