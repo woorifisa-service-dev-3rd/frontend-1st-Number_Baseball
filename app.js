@@ -1,3 +1,5 @@
+
+
 // 버튼 클릭 이벤트 처리
 
 
@@ -29,7 +31,6 @@ function a(btn) {
 
     if (input1.value === '') {
         input1.value = number;
-
     } else if (input2.value === '') {
         input2.value = number;
     } else if (input3.value === '') {
@@ -37,7 +38,20 @@ function a(btn) {
     } else if (input4.value === '') {
         input4.value = number;
     };
+
+    btn.disabled = true;
+
+
 };
+
+
+function resetClick(btn) {
+
+    btn.disabled = false;
+};
+
+
+
 
 
 // // const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -123,13 +137,48 @@ btn0.addEventListener('click', () => {
 
 
 
+function generateRandomNumbers() {
+    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let result = [];
 
-// const buttonContainer = document.getElementsByClassName('buttonContainer');
 
-// buttonContainer.addEventListener('click', (event) =>
-//     if (event.target.tagName === 'BUTTON') {
-//     var buttonId = event.target.id;
-//     var buttonNumber = buttonId.replace('button', '');
-//     input1.value = '값 ' + buttonNumber;
-// }
-// );
+    for (let i = 0; i < 4; i++) {
+        // 랜덤한 인덱스 선택
+        const randomIndex = Math.floor(Math.random() * numbers.length);
+        // 선택된 숫자 추출
+        const selectedNumber = numbers[randomIndex];
+        // 결과 배열에 추가
+        result.push(selectedNumber);
+        // 배열에서 선택된 숫자 제거
+        numbers.splice(randomIndex, 1);
+    }
+
+    return result;
+}
+
+function checkGuess(randomNumbers, userInput) {
+    let stlike = 0; // 맞은 숫자와 자리 모두 일치하는 개수 (Bulls)
+    let ball = 0;  // 맞은 숫자는 맞지만 자리는 다른 개수 (Cows)
+
+    for (let i = 0; i < randomNumbers.length; i++) {
+        if (randomNumbers[i] === userInput[i]) {
+            stlike++;
+        } else if (randomNumbers.includes(userInput[i])) {
+            ball++;
+        }
+    }
+
+    return { stlike, ball };
+}
+
+// 랜덤 숫자 생성
+const randomNumbers = generateRandomNumbers();
+console.log('Random Numbers:', randomNumbers);
+
+// 사용자 입력 (임의로 예시로 설정)
+const userInput = [1, 2, 3, 4]; // 사용자가 입력한 숫자 배열
+
+// 비교
+const result = checkGuess(randomNumbers, userInput);
+console.log('Bulls:', result.stlike); // Bulls 개수 출력
+console.log('Cows:', result.ball);   // Cows 개수 출력
