@@ -41,7 +41,8 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.logCount {
+/* log로 이름 바꿈 */
+.log {
     border: none;
     border-radius: 10px;
     outline: none;
@@ -136,9 +137,9 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-#method_id,
 #answer,
-#reset {
+#reset,
+#method_id {
     background-color: #FFE4E8;
     border-radius: 5px;
 
