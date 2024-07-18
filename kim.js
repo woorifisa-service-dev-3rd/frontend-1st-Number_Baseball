@@ -1,7 +1,7 @@
 window.onload = function () {
     document.getElementById('number1').focus();
 };
-
+//1.
 const inputs = document.querySelectorAll('input[id^="number"]');
 inputs.forEach((input, index) => {
     input.addEventListener('keyup', function (event) {
@@ -14,14 +14,16 @@ inputs.forEach((input, index) => {
         }
     });
 });
-
+//2.
 const inputs2 = document.querySelectorAll('input[id^="number"]');
 inputs.forEach((input, index) => {
-    input.addEventListener('keyup', function (event) {
-        const key = event.key;
+    input.addEventListener('input', function (event) {
+        const key = event.target.value;
         if (key !== 'Backspace' && key !== 'Delete') {
-            if (index < 4) {
-                inputs[index + 1].focus();
+            if (key >= '0' && key <= '9') {
+                if (index < 4) {
+                    inputs[index + 1].focus();
+                }
             }
         }
     });
@@ -45,7 +47,7 @@ input3.addEventListener('input', () => {
 input4.addEventListener('input', () => {
     b(0, 1, 2, 3);
 })
-
+//3.
 function b(a, b, c, d) {
     let keynum = ['', '', '', ''];
     const inputs = document.querySelectorAll('input[id^=number]');
@@ -54,6 +56,7 @@ function b(a, b, c, d) {
     })
     if (inputs[d].value === keynum[a] || inputs[d].value === keynum[b] || inputs[d].value === keynum[c]) {
         inputs[d].value = '';
+        inputs[d].focus();
     };
 
 
