@@ -1,4 +1,4 @@
-## Number_Baseball 🎮
+## Number_Baseball 🎪
 간단하게 해볼 수 있는 숫자 야구 게임을 즐길 수 있는 웹사이트 입니다.
 
 ![페이지 시연](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/Document%20-%20Chrome%202024-07-11%2017-30-56.gif)
@@ -6,7 +6,7 @@
 
 <br>
 
-### 서비스 소개
+### 서비스 소개 🎪
 
 순서가 정해진, 중복이 없는,
 4자리의 랜덤한 숫자 배열을 도전 기회 9번 이내에 맞춰보세요!
@@ -14,7 +14,8 @@
 
 <br>
 
-### 이용 방법
+### 이용 방법 🎪
+
 * 기회는 게임당 9번! 가장 적은 횟수를 사용하여 정답을 맞혀보세요!
 * 각 숫자의 자리에 키보드 또는 마우스를 이용하여 숫자를 입력하세요!
 
@@ -30,7 +31,7 @@
 
 <br>
 
-### 24.07.18. 업데이트 내역
+### 24.07.18. 업데이트 내역 🎪
 
 - 상단 이미지 height 조정
 - 버튼 위치 일부 조정
@@ -44,7 +45,7 @@
 
 <br>
 
-### Light house 측정결과
+### Light house 측정결과 🎪
 
 ![lighthouse](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/%EB%9D%BC%EC%9D%B4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4.png)
 
@@ -53,7 +54,7 @@
 
 <br>
 
-### 팀 규칙
+### 팀 규칙 🎪 
 
 - 지정 폰트 사용하기 - UI 스타일 가이드 참조
 - 지정 색상 사용하기 - UI 스타일 가이드 참조
@@ -65,7 +66,7 @@
 
 <br>
 
-### UI 스타일 가이드
+### UI 스타일 가이드 🎪
 - 폰트 : Jua
 
 ![font](https://github.com/woorifisa-service-dev-3rd/frontend-1st-Number_Baseball/blob/main/img_/font.jpg)
