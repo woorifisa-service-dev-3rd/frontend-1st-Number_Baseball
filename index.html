@@ -20,25 +20,31 @@
     <div class="main_container">
         <div>
             <div class="title">
-
-                <img src="img_/numberbaseball.jpg" width="800px" height="100px" alt="">
+                <!-- height 수정 100->150 -->
+                <img src="img_/numberbaseball.jpg" width="800px" height="150px" alt="">
 
             </div>
+
             <!-- class hiddenbox1 추가 및 width, height 설정 -->
             <div style="display: flex; justify-content: flex-end;">
                 <button type="button" style="margin-left: 1em;" class="hiddenbox1" id="method_id"><strong>게임
                         방법</strong>
 
-                    <div class="hiddenbox" id="hiddenbox" width="500px" height="400px">
+                    <div class="hiddenbox" id="hiddenbox">
                         <h2>게임 진행 방법</h2>
                         <h3> 순서가 정해진! 중복이 없는! <br>
-                            0~9 사이의 랜덤한 숫자 4개를 맞춰보세요!</h3>
+                            0~9 사이의 랜덤한 숫자 4개를 맞춰보세요!</h3><br>
                         <p>
-                            1. 정답이라고 생각하는 4자리 숫자를 입력합니다.<br>
-                            2. 입력한 숫자가 같은 자리, 같은 숫자이면 S로 표시됩니다.<br>
-                            3. 입력한 숫자가 다른 자리, 같은 숫자이면 B로 표시됩니다.<br>
-                            4. 입력한 숫자가 정답 숫자에 존재하지 않는 다면 OUT으로 표시됩니다.<br>
-                            5. 9번의 기회안에 정답을 맞춰보세요! <br>
+                            정답이라고 생각하는 4자리 숫자를 입력하고 제출버튼을 누릅니다.<br>
+                            입력한 숫자가 아니라고 생각된다면 리셋버튼을 누릅니다.<br>
+                            리셋버튼은 새 게임을 불러오는 것이 아니므로
+                            <span class="text-warning">주의</span>!! <br><br>
+
+
+                            입력한 숫자가 같은 자리, 같은 숫자이면 <span class="stlike">S</span><br>
+                            입력한 숫자가 다른 자리, 같은 숫자이면 <span class="ball">B</span><br>
+                            입력한 숫자가 정답 숫자에 존재하지 않는다면 <span class="text-warning">OUT</span>으로 표시됩니다.<br><br>
+                            결과 창의 정보를 바탕으로 9번의 기회안에 정답을 맞춰보세요! <br>
                         </p>
 
                     </div>
@@ -115,9 +121,20 @@
                         <strong>0</strong>
                     </button>
                 </div>
+
+                <!-- class hiddenbox 추가 (버튼 설명) 설정 -->
                 <div>
-                    <button type="button" style="margin-left: 1em; " id="answer"><strong>제출</strong></button>
-                    <button type="button" style="margin-left: 1em; " id="reset"><strong>리셋</strong></button>
+                    <button type="button" style="margin-left: 1em;" class="hiddenbox2" id="answer"><strong>제출</strong>
+                        <div class="hiddenbox21" id="hiddenbox21">
+                            결과 제출
+                        </div>
+                    </button>
+
+                    <button type="button" style="margin-left: 1em;" class="hiddenbox2" id="reset"><strong>리셋</strong>
+                        <div class="hiddenbox21" id="hiddenbox21">
+                            입력값 초기화
+                        </div>
+                    </button>
                 </div>
 
             </div>
