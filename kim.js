@@ -27,15 +27,46 @@ inputs.forEach((input, index) => {
     });
 });
 
-
-
-// 버튼 클릭 이벤트 처리
-
-
+// 키보드 입력시 중복숫자방지 31~65 line
 const input1 = document.getElementById('number1');
 const input2 = document.getElementById('number2');
 const input3 = document.getElementById('number3');
 const input4 = document.getElementById('number4');
+
+input1.addEventListener('input', () => {
+    b(1, 2, 3, 0);
+})
+input2.addEventListener('input', () => {
+    b(0, 2, 3, 1);
+})
+input3.addEventListener('input', () => {
+    b(0, 1, 3, 2);
+})
+input4.addEventListener('input', () => {
+    b(0, 1, 2, 3);
+})
+
+function b(a, b, c, d) {
+    let keynum = ['', '', '', ''];
+    const inputs = document.querySelectorAll('input[id^=number]');
+    inputs.forEach((input, index) => {
+        keynum[index] = input.value;
+    })
+    if (inputs[d].value === keynum[a] || inputs[d].value === keynum[b] || inputs[d].value === keynum[c]) {
+        inputs[d].value = '';
+    };
+
+
+
+    // const inputs = document.querySelectorAll('input[id^=number]');
+    // inputs.forEach(input => {
+    //     if (input.value === keynum[a] || input.value === keynum[b] || input.value === keynum[c]) {
+    //         input.value = '';
+    //     }
+    // })
+}
+
+// 버튼 클릭 이벤트 처리
 
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
@@ -84,7 +115,12 @@ function disableAllButtonsExceptSelected() {
     // 모든 버튼을 찾아서 disabled 처리
     const buttons = document.querySelectorAll('.btn-primary');
     buttons.forEach(button => {
-        //이부분 삭제했음 function전까지
+        button => {
+            if (!button.disabled) {
+                button.disabled = true;
+            }
+        }
+
         function resetInputs() {
             const buttons = document.querySelectorAll('.btn-primary');
             let inputs = document.querySelectorAll('input[id^="number"]');
@@ -102,9 +138,6 @@ function disableAllButtonsExceptSelected() {
         answerButton.addEventListener('click', resetInputs);
     });
 };
-
-
-
 
 btn1.addEventListener('click', () => {
     a(btn1);
@@ -145,4 +178,5 @@ btn9.addEventListener('click', () => {
 btn0.addEventListener('click', () => {
     a(btn0);
 });
+
 
