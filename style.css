@@ -82,6 +82,7 @@ input::-webkit-inner-spin-button {
     border: 0;
     border-radius: 1em;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 
 }
 
@@ -199,6 +200,7 @@ input::-webkit-inner-spin-button {
     border: 1px solid #D0D5DD;
     z-index: 2;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
 }
 
 .hiddenbox1:hover .hiddenbox {
@@ -216,6 +218,7 @@ input::-webkit-inner-spin-button {
     border: 1px solid #D0D5DD;
     z-index: 2;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
 }
 
 .hiddenbox2:hover .hiddenbox21 {
@@ -223,6 +226,10 @@ input::-webkit-inner-spin-button {
 
 }
 
+.hiddenbox1,
+.hiddenbox2 {
+    cursor: pointer;
+}
 
 /* 특정 글자 색깔 입력 */
 .text-warning {
@@ -243,7 +250,7 @@ input::-webkit-inner-spin-button {
 /* 게임 클리어 및 실패시 뜨는 팝업창 */
 
 .popup {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;

@@ -78,6 +78,10 @@ answer_btn.addEventListener('click', () => {
         document.getElementById('number4').value = '';
 
         console.log(logs);
+
+
+
+
+
     };
-}
-);
+});
