@@ -1,3 +1,4 @@
+import { displayLosePopup, displayVictoryPopup } from './display.js';
 import { value1 } from './generate_num.js';
 
 const inputs = document.querySelectorAll('input[id^="number"]');
@@ -7,11 +8,6 @@ const answer_btn=document.getElementById('answer');
 
 
 
-// const answer_1=document.getElementById('ex1').textContent;
-// const answer_2=document.getElementById('ex2').textContent;
-// const answer_3=document.getElementById('ex3').textContent;
-// const answer_4=document.getElementById('ex4').textContent;
-// const answer_list= [answer_1,answer_2,answer_3,answer_4];
 
 const answer_list = [value1[0], value1[1], value1[2], value1[3]];
 console.log(answer_list);
@@ -89,31 +85,11 @@ answer_btn.addEventListener('click',()=>{
         if (strike === 4) {
             displayVictoryPopup();
         } else if (logs === 8) {
-            displayLosePopup();
+            displayLosePopup;
         }
 
         document.getElementById('number1').focus();
     }
 });
 
-function displayVictoryPopup() {
-    const victoryPopup = document.getElementById('victoryPopup');
-    const closeVictoryPopupBtn = document.getElementById('closeVictoryPopupBtn');
 
-    victoryPopup.style.display = 'block';
-
-    closeVictoryPopupBtn.addEventListener('click', () => {
-        victoryPopup.style.display = 'none';
-    });
-};
-
-function displayLosePopup() {
-    const losePopup = document.getElementById('losePopup');
-    const closeLosePopupBtn = document.getElementById('closeLosePopupBtn');
-
-    losePopup.style.display = 'block';
-
-    closeLosePopupBtn.addEventListener('click', () => {
-        losePopup.style.display = 'none';
-    });
-};
