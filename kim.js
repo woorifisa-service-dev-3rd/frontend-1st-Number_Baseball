@@ -24,6 +24,8 @@ inputs.forEach((input, index) => {
             if (key >= '0' && key <= '9') {
                 if (index < 4) {
                     inputs[index + 1].focus();
+                    console.log(document.getElementById(`btn${key}`).querySelector('strong').textContent);
+                    document.getElementById(`btn${key}`).disabled=true;
                 }
 
             }
@@ -102,12 +104,16 @@ function a(btn) {
 
     if (input1.value === '') {
         input1.value = number;
+        input2.focus();
     } else if (input2.value === '') {
         input2.value = number;
+        input3.focus();
     } else if (input3.value === '') {
         input3.value = number;
+        input4.focus();
     } else if (input4.value === '') {
         input4.value = number;
+        input4.focus();
     };
 
     btn.disabled = true;
